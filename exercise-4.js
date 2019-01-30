@@ -1,12 +1,10 @@
-// Menggunakan Sitch-Case
+// Menggunakan Switch-Case
 
 var tanggal = 21;
 var bulan = 1;
 var tahun = 1945;
 var namaBulan = '';
 var valid = true;
-
-
 
 
 
@@ -51,14 +49,39 @@ switch (bulan) {
         break;
 }
 
-if (tanggal > 31 || tanggal < 1) {
-    console.log('Masukan tanggal salah');
-    valid = false;
-}
-if (bulan === '') {
+if (bulan === 1 || bulan === 3 || bulan === 5 || bulan === 7 || bulan === 8 || bulan === 10 || bulan === 12) {
+    if (tanggal > 31 || tanggal < 1) {
+        console.log('Masukan tanggal salah');
+        valid = false;
+    }
+} else if (bulan === 2) {
+    if (tahun % 4 === 0 && tahun % 100 !== 0) {
+        if (tanggal > 29 || tanggal < 1) {
+            console.log('Masukan tanggal salah');
+            valid = false;
+        } else if (tahun % 400 === 0) {
+            if (tanggal > 29 || tanggal < 1) {
+                console.log('Masukan tanggal salah');
+                valid = false;
+            } else {
+                if (tanggal > 28 || tanggal < 1) {
+                    console.log('Masukan tanggal salah');
+                    valid = false;
+                }
+            }
+        }
+    }
+} else if (bulan === 4 || bulan === 6 || bulan === 9 || bulan === 11) {
+    if (tanggal > 30 || tanggal < 1) {
+        console.log('Masukan tanggal salah');
+        valid = false;
+    }
+} else {
     console.log('Masukan bulan salah');
     valid = false;
 }
+
+
 if (tahun > 2200 || tahun < 1900) {
     console.log('Masukan tahun salah');
     valid = false;

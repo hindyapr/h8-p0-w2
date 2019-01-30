@@ -1,10 +1,10 @@
 //Logic Challenge - Bandingkan Angka
 
 function bandingkanAngka(angka1, angka2) {
-  // you can only write your code here!
-  if (angka1 < angka2) return true;
-  if (angka1 > angka2) return false;
-  else return -1;
+    // you can only write your code here!
+    if (angka1 < angka2) return true;
+    if (angka1 > angka2) return false;
+    else return -1;
 }
 
 // TEST CASES

@@ -1,3 +1,5 @@
+//Menggunakan If Else
+
 var nama = 'Hindyas';
 var peran = 'Petarung';
 
