@@ -1,0 +1,56 @@
+//Newton Second Law
+
+STORE "massa" with any value
+STORE "percepatan" with any value
+STORE "gaya" without any value
+
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+
+DISPLAY "area"
+
+//Tahun kabisat
+
+STORE "tahun" with any value
+
+CALCULATE "tahun" mod 4
+STORE "remainder1" value with calculation result
+
+CALCULATE "tahun" mod 100
+STORE "remainder2" value with calculation result
+
+CALCULATE "tahun" mod 400
+STORE "remainder3" value with calculation result
+
+
+
+IF "remainder1" EQUAL 0 AND "remainder2" NOT EQUAL 0
+	DISPLAY "Kabiast"
+ELSE IF "remainder3" EQUAL 0
+	DISPLAY "Kabiast"
+ELSE
+	DISPLAY "Bukan Kabiast"
+	
+	
+//Laundry day
+
+STORE "banyakPakaian" with any value
+
+WHIlE "banyakPakaian" > 0 
+	DO "Masukan pakaian"
+	SUBSTRACT "banyakPakaian" by 1
+	
+DO "Menyalakan mesin cuci"
+
+
+//Periksa kuku
+
+STORE "jumlahMurid" with any value
+
+WHIlE "jumlahMurid" > 0
+	IF "kukuPanjang" 
+		DO "Hukum Murid"
+	ELSE
+		DO "Puji Murid"
+	SUBSTRACT "jumlahMurid" by 1	
+	
