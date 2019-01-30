@@ -25,11 +25,11 @@ STORE "remainder3" value with calculation result
 
 
 IF "remainder1" EQUAL 0 AND "remainder2" NOT EQUAL 0
-	DISPLAY "Kabiast"
+	DISPLAY "Kabisat"
 ELSE IF "remainder3" EQUAL 0
-	DISPLAY "Kabiast"
+	DISPLAY "Kabisat"
 ELSE
-	DISPLAY "Bukan Kabiast"
+	DISPLAY "Bukan Kabisat"
 	
 	
 //Laundry day
