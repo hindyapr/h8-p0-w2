@@ -1,7 +1,7 @@
 // Menggunakan Switch-Case
 
-var tanggal = 21;
-var bulan = 1;
+var tanggal = 32;
+var bulan = 15;
 var tahun = 1945;
 var namaBulan = '';
 var valid = true;
